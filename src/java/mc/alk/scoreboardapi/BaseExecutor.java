@@ -16,6 +16,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -24,6 +25,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicBoolean;
+import mc.euro.bukkitinterface.BukkitInterface;
 
 public abstract class BaseExecutor implements CommandExecutor{
 	public static final String version = "2.0.1";
@@ -606,7 +608,7 @@ public abstract class BaseExecutor implements CommandExecutor{
 		if (foundPlayer != null)
 			return foundPlayer;
 
-		Player[] online = Bukkit.getOnlinePlayers();
+		Collection<? extends Player> online = BukkitInterface.getOnlinePlayers();
 
 		for (Player player : online) {
 			String playerName = player.getName();

@@ -347,4 +347,9 @@ public class BObjective extends SAPIObjective{
                 displayNamePrefix, displayName, displayNameSuffix, SAPI.MAX_OBJECTIVE_DISPLAYNAME_SIZE);
         handler.setDisplayName(o, team, display);
     }
+    
+    @Override
+    public void unregister() {
+        o.unregister();
+    }
 }

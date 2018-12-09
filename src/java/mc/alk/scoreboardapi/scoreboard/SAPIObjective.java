@@ -303,6 +303,10 @@ public class SAPIObjective implements SObjective{
                 SAPI.MAX_OBJECTIVE_DISPLAYNAME_SIZE);
     }
 
+    @Override
+    public void unregister() {
+    }
+
 
 
 }
