@@ -4,7 +4,7 @@
     <groupId>mc.alk</groupId>
     <artifactId>BattleScoreboardAPI</artifactId>
     <packaging>jar</packaging>
-    <version>1.1.8.6</version>
+    <version>1.1.8.7</version>
     <name>BattleScoreboardAPI</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -81,7 +81,8 @@
         </extensions>
         <defaultGoal>install</defaultGoal>
         <!-- Where our source directory is -->
-        <sourceDirectory>${basedir}/src/java</sourceDirectory>
+        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+        <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
         <!-- Include all the resources we need -->
         <resources>
             <resource>
